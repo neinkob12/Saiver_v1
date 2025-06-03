@@ -200,7 +200,7 @@ export default function ChatInterface() {
 
   return (
     <div className="flex-1 flex flex-col bg-gradient-to-b from-emerald-50/50 to-white dark:from-emerald-950/20 dark:to-gray-950">
-      <ScrollArea className="flex-1 p-4">
+      <ScrollArea className="flex-1 p-4 md:p-6">
         <div className="space-y-6 max-w-3xl mx-auto">
           {messages.length === 0 && (
             <div className="flex flex-col items-center justify-center h-[60vh] text-center">
@@ -449,7 +449,7 @@ export default function ChatInterface() {
           </div>
         </div>
       )}
-      <div className="p-4 border-t border-emerald-200 dark:border-emerald-800 bg-white dark:bg-gray-900">
+      <div className="p-4 md:p-6 border-t border-emerald-200 dark:border-emerald-800 bg-white dark:bg-gray-900">
         <form
           onSubmit={(e) => {
             e.preventDefault()

@@ -111,3 +111,26 @@
   height: auto;
   border-radius: 0.375rem;
 }
+
+/* Mobile navigation transitions */
+@media (max-width: 767px) {
+  .sidebar-overlay {
+    backdrop-filter: blur(2px);
+  }
+
+  /* Prevent body scroll when mobile menu is open */
+  body.mobile-menu-open {
+    overflow: hidden;
+  }
+}
+
+/* Smooth transitions for sidebar */
+.sidebar-transition {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus styles for accessibility */
+.mobile-menu-button:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
